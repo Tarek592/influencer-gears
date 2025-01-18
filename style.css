@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+/* navber start */
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 50px auto;
+    text-align: center;
+
+    
+  
+}
+.links{
+    display: flex;
+}
+.links>li{
+    list-style: none;
+    margin-right: 32px;
+    margin-bottom: 10px;  
+}
+.links>li>a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.band{
+color: rgb(58, 58, 58);
+font-size: 1.5rem;
+font-weight: 700;
+
+}
+/* navber close */
+
+/* hero section start */
+.hero-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.hero-img{
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 375px;
+    padding: 30px 33px 31px 2px ;
+   
+    
+}
+.hero-img img{
+    width: 100%;
+}
+.hero-details{
+    max-width: 582px;
+}
+.hero-details-title{
+    color: rgb(58, 58, 58);
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.hero-details-sub-title{
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 505px;
+    margin-bottom: 16px;
+}
+.hero-btn{
+    padding: 10px 24px 10px 24px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.hero-btn-text{
+    margin-right: 12px;
+}
+
+/* hero section close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small device responsive */
+@media screen and (max-width:576px) {
+    .navber{
+        flex-direction: column;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        
+    }
+    .links>li>a:first-child{
+        margin-left: 32px;
+    }
+    .hero-container{
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .hero-details-title{
+        font-size: 1.75rem;
+    }
+    .hero-details-sub-title{
+        font-size: 0.875rem;
+    }
+}

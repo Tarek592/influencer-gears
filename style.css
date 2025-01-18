@@ -89,6 +89,28 @@ font-weight: 700;
 }
 
 /* hero section close */
+/* company section start */
+.company{
+    max-width: 1310px;
+   margin: 0 auto;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+
+
+.company-icon{
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   padding: 36px 61px 34px 62px;
+   margin: 10px 10px ;
+   border-top: 1px solid rgb(222, 215, 215);
+   border-bottom: 1px solid rgb(222, 215, 215);
+   
+
+}
+
 
 
 
@@ -137,4 +159,17 @@ font-weight: 700;
     .hero-details-sub-title{
         font-size: 0.875rem;
     }
+    .company-icon {
+       border: none;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       padding: 20px;
+       justify-items: center;
+    }
+    .company-icon img{
+        width: 70%;
+        margin: 0 auto;
+      
+    }
+   
 }
